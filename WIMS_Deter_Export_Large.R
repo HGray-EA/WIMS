@@ -75,11 +75,8 @@ for (y in 1:length(date1)) {
               rename(Deter = determinand.notation)
 
       
-    
-   # write.csv(do, "C:/Users/hg000051/Downloads/WIMS_SDA_Export.csv")
-    
-  df <-   read.csv("C:/Users/hg000051/Downloads/WIMS_SDA_Export.csv")
-          EA_areas <- read_sf("C:/Users/hg000051/Downloads/AdminBoundEAandNEpublicFaceAreas-SHP/data/Administrative_Boundaries_Environment_Agency_and_Natural_England_Public_Face_Areas.shp")
+ # Load in shapefile data   
+ EA_areas <- read_sf("C:/Users/hg000051/Downloads/AdminBoundEAandNEpublicFaceAreas-SHP/data/Administrative_Boundaries_Environment_Agency_and_Natural_England_Public_Face_Areas.shp")
   
 
   # Intersect WIMS points with EA areas, so we know which area mon points belong to
